@@ -1,0 +1,16 @@
+2021-03-20 16:57:40	[32mINFO[0m	ego@v0.4.1/ego_function.go:193	init default logger             	{"comp": "core.elog"}
+2021-03-20 16:57:40	[32mINFO[0m	ego@v0.4.1/ego_function.go:194	init Ego logger                 	{"comp": "core.elog"}
+2021-03-20 16:57:40	[33mWARN[0m	ego@v0.4.1/ego_function.go:134	no config...                    	{"comp": "core.econf", "addr": "", "error": "default config not exist"}
+2021-03-20 16:57:40	[32mINFO[0m	ego@v0.4.1/ego_function.go:188	init max procs                  	{"comp": "app", "value": 8}
+2021-03-20 16:57:40	[33mWARN[0m	ego@v0.4.1/ego_function.go:174	not init trace                  	{"value": "need trace config: [trace.jaeger] in config", "comp": "app"}
+2021-03-20 16:57:40	[31mPANIC[0m	egin/container.go:31	parse config error              	{"comp": "server.egin", "error": "server.http: invalid key, maybe not exist in config", "errorVerbose": "invalid key, maybe not exist in config\ngithub.com/gotomicro/ego/core/econf.init\n\t/Users/11126518/go/pkg/mod/github.com/gotomicro/ego@v0.4.1/core/econf/conf.go:342\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:5646\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:5641\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:5641\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:5641\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:5641\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:191\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_amd64.s:1374\nserver.http\ngithub.com/gotomicro/ego/core/econf.(*Configuration).UnmarshalKey\n\t/Users/11126518/go/pkg/mod/github.com/gotomicro/ego@v0.4.1/core/econf/conf.go:368\ngithub.com/gotomicro/ego/core/econf.UnmarshalKey\n\t/Users/11126518/go/pkg/mod/github.com/gotomicro/ego@v0.4.1/core/econf/conf.go:338\ngithub.com/gotomicro/ego/server/egin.Load\n\t/Users/11126518/go/pkg/mod/github.com/gotomicro/ego@v0.4.1/server/egin/container.go:30\nmain.main.func1\n\t/Users/11126518/go_projcet/go-plugin/ego/main.go:15\nmain.main\n\t/Users/11126518/go_projcet/go-plugin/ego/main.go:21\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:204\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_amd64.s:1374", "key": "server.http"}
+github.com/gotomicro/ego/core/elog.(*Component).Panic
+	/Users/11126518/go/pkg/mod/github.com/gotomicro/ego@v0.4.1/core/elog/component.go:389
+github.com/gotomicro/ego/server/egin.Load
+	/Users/11126518/go/pkg/mod/github.com/gotomicro/ego@v0.4.1/server/egin/container.go:31
+main.main.func1
+	/Users/11126518/go_projcet/go-plugin/ego/main.go:15
+main.main
+	/Users/11126518/go_projcet/go-plugin/ego/main.go:21
+runtime.main
+	/usr/local/go/src/runtime/proc.go:204
